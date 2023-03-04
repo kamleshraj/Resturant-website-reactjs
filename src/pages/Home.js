@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <Layout>
       <Container fixed>
-        <Typography>
-          
+        <Typography component="h4">
+          Main Carousal Header will come here....
         </Typography>
       </Container> 
     </Layout>
