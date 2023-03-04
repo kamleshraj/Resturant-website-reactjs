@@ -6,12 +6,9 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
@@ -19,7 +16,6 @@ import { NavLink } from 'react-router-dom';
 
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Menu', 'About', 'Contact'];
 
 function HideOnScroll(props) {
   const { children, window } = props;
