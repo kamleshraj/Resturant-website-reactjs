@@ -1,5 +1,4 @@
 import '../src/styles/main.css';
-import Layout from './components/Layout';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
