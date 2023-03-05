@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { NavLink } from 'react-router-dom';
-import styled from 'react-components'
+import styled from 'styled-components'
 
 const drawerWidth = 240;
 
