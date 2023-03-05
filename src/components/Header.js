@@ -40,7 +40,7 @@ const Header = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      Resturant Website
+        My Favorite Restaurant
       </Typography>
       <Divider />
       <List>
@@ -79,7 +79,7 @@ const Header = (props) => {
             component="div"
             sx={{ flexGrow: 1 }}
           >
-            Resturant Website
+             My Favorite Restaurant
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <List sx={{display:'flex'}}>
