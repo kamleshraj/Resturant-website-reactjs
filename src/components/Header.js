@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { NavLink } from 'react-router-dom';
-
+import styled from 'react-components'
 
 const drawerWidth = 240;
 
@@ -28,6 +28,16 @@ function HideOnScroll(props) {
     </Slide>
   );
 }
+
+const Wrapper = styled.section`
+.main-navbar{
+  li{
+    a{
+      text-decoration:none
+    }
+  }
+}
+`;
 
 const Header = (props) => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -60,6 +70,7 @@ const Header = (props) => {
   );
   
   return (
+    <Wrapper>
     <Box sx={{ display: 'flex',pt:10 }}>
       <HideOnScroll {...props}>
       <AppBar component="nav" position="fixed" sx={{bgcolor:'black'}}>
@@ -81,7 +92,7 @@ const Header = (props) => {
              My Favorite Resto
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-          <List sx={{display:'flex'}}>
+          <List className='main-navbar' sx={{display:'flex'}}>
                 <ListItem disablePadding>
                   <NavLink to='/'>Home</NavLink>
                 </ListItem>
@@ -115,7 +126,8 @@ const Header = (props) => {
           {drawer}
         </Drawer>
       </Box>
-    </Box>
+      </Box>
+      </Wrapper>
   )
 }
 
