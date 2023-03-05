@@ -9,7 +9,6 @@ import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import { NavLink } from 'react-router-dom';
@@ -40,7 +39,7 @@ const Header = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        My Favorite Restaurant
+        My Favorite Resto
       </Typography>
       <Divider />
       <List>
@@ -79,7 +78,7 @@ const Header = (props) => {
             component="div"
             sx={{ flexGrow: 1 }}
           >
-             My Favorite Restaurant
+             My Favorite Resto
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
           <List sx={{display:'flex'}}>
