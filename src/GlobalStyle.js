@@ -17,11 +17,4 @@ a{
 .main-section{
     padding:60px 0;
 }
-.our-story-section{
-    background:${({ theme }) => theme.colors.greybg};
-    .content-container{
-        max-width:550px;
-        margin:auto;
-    }
-}
 `;

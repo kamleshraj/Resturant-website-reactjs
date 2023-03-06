@@ -5,14 +5,14 @@ import { MenuData } from '../data/data'
 const MenuItems = () => {
     return (
         <>
-        <Box className='menu-list' sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        <Box className='menu-list' sx={{ display: "flex", flexWrap: "wrap", justifyContent: "start" }}>
             {MenuData.map((menu) => {
               return (
-                <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
+                <Card sx={{ maxWidth: "290px", display: "flex", m: 2 }}>
                     <CardActionArea>
                      
                       <CardMedia
-                        sx={{ minHeight: "400px" }}
+                        sx={{ minHeight: "300px" }}
                         component={"img"}
                         src={menu.image}
                         alt={menu.name}
@@ -23,6 +23,9 @@ const MenuItems = () => {
                     </Typography>
                       <Typography variant='body2' component={"div"}>
                         {menu.description}
+                      </Typography>
+                      <Typography variant='h6' component={"h6"}>
+                        {menu.price}
                       </Typography>
                     </CardContent>
                     </CardActionArea>

@@ -2,7 +2,7 @@ import { Typography,Box } from "@mui/material"
 
 const Title=(props)=>{
     return(
-        <Box className="main-title">
+        <Box className="main-title" sx={{textAlign:'center'}}>
             <Typography variant="h6">
                 {props.subtitle}
             </Typography>

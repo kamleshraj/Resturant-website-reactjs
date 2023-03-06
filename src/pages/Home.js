@@ -5,7 +5,7 @@ import { Button, Typography, Box } from '@mui/material';
 import styled from 'styled-components';
 import MenuItems from '../components/MenuList';
 import Title from '../components/Title';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -17,9 +17,7 @@ const Home = () => {
             <Typography variant='body2'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco
             </Typography>
-            <Link to="/menu">
-              <Button variant="outlined">View Our Menu</Button>
-            </Link>
+            <Button variant="outlined">View Our Menu</Button>
           </Box>
         </Container>
       </Box>
@@ -31,11 +29,12 @@ const Home = () => {
         </Typography>
         </Box>
       </Box>
-      <Box className='main-section menu-items'>
-        <Title title='Our Menu' subtitle='TASTY AND CRUNCHY'/>
-        <MenuItems />
-      </Box>
-     
+      <Container maxWidth="xl">
+        <Box className='main-section menu-items'>
+          <Title title='Our Menu' subtitle='TASTY AND CRUNCHY'/>
+          <MenuItems />
+        </Box>
+      </Container>
     </StyleWrapper>
   )
 }
@@ -50,6 +49,13 @@ const StyleWrapper = styled.section`
     justify-content: center;
     .hero-banner-container{
       max-width:400px;
+    }
+}
+.our-story-section{
+    background:${({ theme }) => theme.colors.greybg};
+    .content-container{
+        max-width:650px;
+        margin:auto;
     }
 }
 `;
