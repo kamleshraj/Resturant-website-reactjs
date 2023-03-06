@@ -5,16 +5,23 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size:1rem;
+    line-height:1.5
 }
 a{
     text-decoration:none;
     font-size:1rem;
     color:${({theme})=>theme.colors.text}
 }
-.btn-theme{
-    background:#fff;
-    padding:15px;
-    border-radius:6px;
+.main-section{
+    padding:60px 0;
+}
+.our-story-section{
+    background:${({ theme }) => theme.colors.greybg};
+    .content-container{
+        max-width:550px;
+        margin:auto;
+    }
 }
 `;

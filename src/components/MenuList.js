@@ -5,9 +5,6 @@ import { MenuData } from '../data/data'
 const MenuItems = () => {
     return (
         <>
-        <Typography variant="h4" gutterBottom component={"div"}>
-                Today's Dish
-        </Typography>
         <Box className='menu-list' sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
             {MenuData.map((menu) => {
               return (

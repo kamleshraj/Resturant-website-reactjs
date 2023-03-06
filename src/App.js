@@ -1,4 +1,3 @@
-import '../src/styles/main.css';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
@@ -16,7 +15,8 @@ const App = () => {
             heading:'#1e272e',
             text: '#fff',
             btnBg: '#0a3d62',
-            borderColor:'rgb(252 188 94)'
+            borderColor: 'rgb(252 188 94)',
+            greybg:'#e9e9e9'
         },
         responsive:{mobile:'768px',tab:'998px'}
     }

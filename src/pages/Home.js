@@ -1,24 +1,42 @@
 import React from 'react'
 import Banner from '../images/banner.jpeg'
 import { Container } from '@mui/system';
-import { Link } from '@mui/material';
+import { Button, Typography, Box } from '@mui/material';
 import styled from 'styled-components';
-import MenuList from '../components/MenuList';
+import MenuItems from '../components/MenuList';
+import Title from '../components/Title';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
       <StyleWrapper>
-      <div className='home-hero-banner' style={{backgroundImage:`url(${Banner})`}}>
+      <Box className='home-hero-banner' style={{backgroundImage:`url(${Banner})`}}>
         <Container>
-        <div className='hero-banner-container'>
-          <h2>Food Website</h2>
-          <p>Best Food in India</p>
-          <Link to="/" className='btn-theme order-now'>Order Now</Link>
-          </div>
+          <Box className='hero-banner-container'>
+            <Title title='Delicious Food' subtitle='TASTY AND CRUNCHY'/>
+            <Typography variant='body2'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco
+            </Typography>
+            <Link to="/menu">
+              <Button variant="outlined">View Our Menu</Button>
+            </Link>
+          </Box>
         </Container>
-        </div>
-        <MenuList/>
-        </StyleWrapper>
+      </Box>
+      <Box gutterbottom className='main-section our-story-section'>
+        <Box className='content-container'>
+        <Title title='OUR STORY' subtitle='TASTY AND CRUNCHY' />
+        <Typography variant='body2' component='div'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico consectetur adipiscing elitut aliquip.
+        </Typography>
+        </Box>
+      </Box>
+      <Box className='main-section menu-items'>
+        <Title title='Our Menu' subtitle='TASTY AND CRUNCHY'/>
+        <MenuItems />
+      </Box>
+     
+    </StyleWrapper>
   )
 }
 export default Home
@@ -31,21 +49,7 @@ const StyleWrapper = styled.section`
     align-items: center;
     justify-content: center;
     .hero-banner-container{
-      h2{font-size:2.5rem}
-    .order-now{
-      display:block;
-      max-width:130px;
-      text-align:center;
-      text-decoration:none;
-      cursor:pointer;
-      margin-top:1rem;
-      font-weight:700;
-      color:#000;
-      &:hover{
-        background:${({ theme }) => theme.colors.btnBg};
-        color:${({theme})=>theme.colors.text}
-      }
+      max-width:400px;
     }
-  }
 }
 `;
