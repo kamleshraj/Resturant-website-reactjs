@@ -1,11 +1,18 @@
+
 import React from 'react'
-import Layout from '../components/Layout'
+import styled from 'styled-components'
+import MenuItems from '../components/MenuList';
+
+const StyledWrapper = styled.section`
+.menu-list{
+}
+`;
 
 const Menu = () => {
   return (
-    <Layout>
-      <h4>Menu</h4>
-    </Layout>
+  <StyledWrapper>
+    <MenuItems/>
+  </StyledWrapper>
   )
 }
 

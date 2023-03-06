@@ -1,11 +1,8 @@
 import React from 'react'
-import Layout from '../components/Layout'
 
 const Contactus = () => {
   return (
-    <Layout>
-      <h4>Contactus</h4>
-    </Layout>
+    <h4>Contactus</h4>
   )
 }
 

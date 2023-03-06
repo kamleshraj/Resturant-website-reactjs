@@ -29,11 +29,14 @@ function HideOnScroll(props) {
   );
 }
 
-const Wrapper = styled.section`
+const NavbarStyle = styled.section`
 .main-navbar{
   li{
     a{
-      text-decoration:none
+      margin:0 15px;
+    }
+    .active{
+      border-bottom:4px solid ${({ theme }) => theme.colors.borderColor};
     }
   }
 }
@@ -48,7 +51,7 @@ const Header = (props) => {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography variant="h6">
         My Favorite Resto
       </Typography>
       <Divider />
@@ -70,10 +73,10 @@ const Header = (props) => {
   );
   
   return (
-    <Wrapper>
-    <Box sx={{ display: 'flex',pt:10 }}>
+    <NavbarStyle>
+    <Box sx={{ display: 'flex'}}>
       <HideOnScroll {...props}>
-      <AppBar component="nav" position="fixed" sx={{bgcolor:'black'}}>
+      <AppBar component="nav" position="relative" sx={{bgcolor:'black'}}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -127,7 +130,7 @@ const Header = (props) => {
         </Drawer>
       </Box>
       </Box>
-      </Wrapper>
+      </NavbarStyle>
   )
 }
 
