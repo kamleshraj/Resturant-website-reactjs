@@ -14,6 +14,7 @@ const App = () => {
         colors: {
             heading:'#1e272e',
             text: '#fff',
+            darkBg:'#212121',
             btnBg: '#0a3d62',
             borderColor: 'rgb(252 188 94)',
             greybg:'#e9e9e9'

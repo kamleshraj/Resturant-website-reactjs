@@ -17,4 +17,8 @@ a{
 .main-section{
     padding:60px 0;
 }
+footer{
+    background:${({theme})=>theme.colors.darkBg};
+    color:#fff;
+}
 `;

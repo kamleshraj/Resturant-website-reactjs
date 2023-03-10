@@ -69,14 +69,6 @@ export const MenuData = [
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
     image: Chola,
     price: 250,
-  },
-{
-  id:9,
-    name: "Idli Sambhar",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!",
-    image: Idli,
-    price: 300,
-  },
+  }
   ];
   
