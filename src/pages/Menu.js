@@ -1,8 +1,9 @@
 
+import { Box, Container } from '@mui/system';
 import React from 'react'
 import styled from 'styled-components'
 import MenuItems from '../components/MenuList';
-
+import Title from '../components/Title';
 const StyledWrapper = styled.section`
 .menu-list{
 }
@@ -10,9 +11,14 @@ const StyledWrapper = styled.section`
 
 const Menu = () => {
   return (
-  <StyledWrapper>
-    <MenuItems/>
-  </StyledWrapper>
+  <Box sx={{mt:5}}>
+      <StyledWrapper>
+        <Container>
+          <Title title='Delicious Food' subtitle='TASTY AND CRUNCHY'/>
+          <MenuItems />
+        </Container>
+    </StyledWrapper>
+  </Box>
   )
 }
 
