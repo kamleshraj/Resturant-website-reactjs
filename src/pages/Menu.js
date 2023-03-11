@@ -13,7 +13,7 @@ const Menu = () => {
   return (
   <Box sx={{mt:5}}>
       <StyledWrapper>
-        <Container>
+        <Container maxWidth="xl">
           <Title title='Delicious Food' subtitle='TASTY AND CRUNCHY'/>
           <MenuItems />
         </Container>
